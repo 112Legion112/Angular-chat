@@ -1,0 +1,31 @@
+<span> Количество сообщений : {{ itemCount }}</span>
+
+<div class="block">
+  <div class="chat">
+    <div class="message">
+      <div class="col">
+        <p class="live-container" *ngFor="let goal of goals">
+          Player1: {{ goal }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Players1</h2>
+<ul class="player" style="width: 200px">
+  <li style="width: 200px">
+    <form>
+      <input type="text" class="txt" name="Item" placeholder="Messeges.." [(ngModel)]="goalText">
+      <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
+    </form>
+  </li>
+  <!--<li *ngFor="let play of player"-->
+      <!--[class.selected]="play === selectedPlay"-->
+      <!--(click)="onSelect(play)">-->
+    <!--<span class="badge">{{play.name}}</span>-->
+    <!--&lt;!&ndash;<p>Количество кликов{{count}}</p>&ndash;&gt;-->
+    <!--&lt;!&ndash;<button (click)="increase()">Click</button>&ndash;&gt;-->
+  <!--</li>-->
+</ul>
+

@@ -1,0 +1,27 @@
+input{
+  width: 98%;
+}
+form{
+  width: 200px;
+}
+.player{
+  display: flex;
+  width: 80px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+li{
+  width: 80px;
+  height: auto;
+  list-style-type: none;
+  border: 2px solid grey;
+  background-color: white;
+  margin-right: 30px;
+  text-align: center;
+
+}
+li:hover{
+  background-color: #607D8B;
+
+}
